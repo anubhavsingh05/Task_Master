@@ -1,0 +1,41 @@
+.title{
+    background-color     : rgb(120, 94, 154);
+    color                : white;
+    font-family          : 'Bagel Fat One', cursive;
+    font-size            : 2rem;
+    top                  : 50px;
+    position             : relative;
+    overflow             : visible;
+    padding              : 2%;
+    padding-left         : 10%;
+
+    user-select          : none;
+    cursor               : pointer;
+}
+
+.toDoList{
+    padding-left         : 20px;
+    padding-bottom       : 5px;
+    width                : 185px;
+    border-radius        : 10px;
+    
+    transition           : all 100ms ease-in-out;
+}
+.toDoList:hover{
+    background-color     : rgb(171, 74, 184);
+    transform            : scale(1.05);
+    box-shadow           : 5px 5px 10px 0px black;
+}
+.toDoList:active{
+    background-color     : rgb(171, 74, 184);
+    transform            : scale(0.99);
+    box-shadow           : 1px 1px 5px 0px black;
+}
+
+img{
+    width                : 50%;
+    position             : absolute;
+    top                  : -90%;
+    right                : -10%;
+    transform            : rotate(20deg);
+}

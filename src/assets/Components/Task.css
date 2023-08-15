@@ -1,0 +1,120 @@
+
+
+.task{
+
+    background-color     : rgb(120, 94, 154);;
+    color                : rgb(255, 255, 255);
+
+    font-family          : 'Geologica', sans-serif;
+    font-size            : 1.2rem;
+
+    width                : 80%;
+    min-height           : 70px;
+    word-wrap            : break-word;
+
+    border-radius        : 12px;
+    padding              : 22px;
+    padding-left         : 40px;
+    margin-left          : 20px;
+    margin-bottom        : 6px;
+
+    position             : relative;
+    
+    display              : flex;
+    justify-content      : flex-start;
+    align-items          : center;
+    flex-wrap            : wrap;
+
+    transition           : all 100ms ease-in-out;
+}
+.cutIt{
+    background-color     : rgb(201, 180, 204);
+}
+.cutIt{
+    background-color     : rgb(201, 180, 204);
+}
+.task:hover{
+    background-color     : rgb(152, 46, 167);
+}
+.task:active{
+    background-color     : rgb(118, 44, 128);
+    transition-duration  : 0ms;
+}
+
+.itemNumber{
+    background-color     : white;
+    color                : rgb(98, 79, 123);;
+    width                : 40px;
+    aspect-ratio         : 1/1;
+    position             : absolute;
+    top                  : -5px;
+    left                 : -3%;
+
+    display              : flex;
+    justify-content      : center;
+    align-items          : center;
+
+    font-weight          : bolder;
+    font-family          : 'Bagel Fat One', cursive;
+    border-radius        : 50%;
+}
+
+.taskBox{
+    display              : flex;
+    justify-content      : flex-start;
+    overflow             : hidden;
+}
+
+.editables{
+    width                : 7%;
+    height               : 70px;
+    margin-left          : 10px;
+    overflow             : visible;
+}
+
+button{
+    width                : 100%;
+    height               : 50%;
+    font-size            : 2rem;
+    overflow             : visible;
+
+    background-color     : transparent;
+    border               : none;
+    border-radius        : 50%;
+
+    display              : flex;
+    justify-content      : center;
+    align-items          : center;
+    
+    transform            : rotate(0deg)scale(0.9);
+    transition           : all 200ms ease-in-out;
+
+}
+
+.edit:hover{
+    transform            : rotate(90deg) scale(1.1);
+}
+.edit:active{
+    transform            : rotate(90deg) scale(1);
+    color                : white;
+    background-color     : rgb(152, 46, 167);
+    transition-duration  : 1ms;
+}
+
+.delete{
+    background-image     : url("../delete_Icon.png");
+    background-size      : 45%;
+    background-repeat    : no-repeat;
+    transform            : rotate(-10deg);
+    background-position  : center;
+}
+.delete:hover{
+    transform            : rotate(10deg);
+    background-size      : 65%;
+}
+.delete:active{
+
+    background-image     : url("../delete_Icon_2.png");
+    background-color     : rgb(152, 46, 167);
+    transition-duration  : 1ms;
+}

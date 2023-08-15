@@ -1,0 +1,338 @@
+
+.card{
+
+    max-width            : 440px;
+    min-height           : 250px;
+    border-radius        : 20px;
+
+    padding-bottom       : 20px;
+
+    position             : relative;
+    left                 : 50%;
+    top                  : 10%;
+    transform            : translate(-50%);
+
+    background-color     : white;
+    overflow             : visible;
+    
+    box-shadow           : 0 0 10px rgba(0, 0, 0, 0.5);
+
+    transform            : translate(-50%);
+  }
+  
+.cardSlideIn{    
+  animation            : cardSlideIn 200ms ease-in-out 0ms 1 forwards ;
+}
+.cardSlideOut{
+  animation            : cardSlideOut 1100ms ease-in-out 0ms 1 forwards ;
+}
+
+@keyframes cardSlideOut {
+  0%{
+    transform            : translate(-100%);
+  }
+  75%{
+    transform            : translate(-100%);
+  }
+  100%{
+    transform            : translate(-50%);
+  }
+}
+@keyframes cardSlideIn {
+  0%{
+    transform            : translate(-50%);
+  }
+  100%{
+    transform            : translate(-100%);
+  }
+}
+
+
+form{
+    position             : relative;
+    top                  : 35%;
+    width                : 100%;
+
+    display              : flex;
+    justify-content      : space-evenly;
+    align-items          : center;
+
+    overflow             : visible;
+}
+
+/* .searchBox{
+  position             : relative;
+  top                  : 35%;
+  width                : 70%;
+  left                 : 15%;
+
+  I DID THIS WHEN I REMOVED THE <FORM> PARENT FROM .searchBox INPUT
+} */
+
+.addButton{
+    background-color     : rgb(120, 94, 154);;
+    color                : white;
+    font-size            : 3rem;
+    outline              : none;
+    border               : none;
+    border               : 5px solid white;
+    width                : 60px;
+    aspect-ratio         : 1/1;
+    overflow             : hidden;
+    border-radius        : 50%;
+    font-weight          : bold;
+
+
+    transform            : rotate(-10deg) scale(1);
+    transition           : all 100ms ease-in-out;
+    
+}
+
+
+
+.addButton:hover{
+    transform            : rotate(10deg) scale(1.05);
+    background-color     : rgb(171, 74, 184);
+    box-shadow           : 3px 3px 10px 0px black;
+}
+.addButton:active{
+    transform            : rotate(-10deg) scale(1);
+    box-shadow           : 0px 0px 0px 0px black;
+}
+
+
+.b2{
+    outline              : none;
+    border               : none;
+    overflow             : visible;
+    font-size            : 1.4rem;
+    position             : absolute;
+    left                 : 10px;
+    top                  : 10px;
+    background-color     : transparent;
+    width                : 30px;
+    height               : 30px;
+    border-radius        : 50%;
+    color                : rgb(255, 255, 255);
+    background-color     : rgb(0, 0, 0);
+    font-weight          : bolder;
+    animation            : revolve 5000ms linear infinite;
+  }
+.b2:hover{
+  outline              : 5px solid black;
+  background-color     : white;
+  color                : black;
+}
+.b2:active{
+  scale                : 0.9;
+  transition-duration  : 0ms;
+}
+
+@keyframes revolve {
+  0%    {   transform  : rotate(0deg);    }
+  50%   {   transform  : rotate(180deg);  }
+  100%  {   transform  : rotate(360deg);  }
+}
+
+
+.credits{
+  position             : absolute;
+  font-family          : Verdana, Geneva, Tahoma, sans-serif;
+  font-size            : 1.4rem;
+  font-weight          : bolder;
+  z-index              : 0;
+  color                : white;
+  width                : 250px;
+  transform            : translate(0px,50px);
+}
+.work{
+  font-size            : 1.2rem;
+  color                : rgb(198, 189, 210);
+}
+.showCredits{
+  animation            : showCredits 200ms ease-in-out 1 forwards;
+}
+.hideCredits{
+  animation            : hideCredits 200ms ease-in-out 1 forwards;
+}
+
+@keyframes showCredits {
+  0%    {   transform  : translate(0px,50px);    }
+  100%  {   transform  : translate(-260px,50px);   }
+}
+@keyframes hideCredits {
+  0%    {   transform  : translate(-260px,50px);   }
+  100%  {   transform  : translate(0px,50px);    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input{
+    font-size            : 1.2rem;
+    font-family          : Verdana, Geneva, Tahoma, sans-serif;
+    font-weight          : bold;
+    outline              : none;
+    border               : none;
+    width                : 70%;
+    padding-left         : 5%;
+    padding-bottom       : 1%;
+    border-bottom        : 2px solid black;
+    color                : rgb(99, 80, 124);;
+    background-color     : transparent;
+}
+
+.uppers{
+    width                : 100%;
+    height               : 200px;
+    overflow             : visible;
+    position             : relative;
+}
+
+::selection {
+    background-color     : rgb(134, 108, 168);
+    color                : white;
+  }
+
+.taskList{
+    max-height           : 350px;
+    padding-bottom       : 10px;
+    padding-top          : 20px;
+    margin-top           : 50px;
+    overflow             : scroll;
+    scrollbar-width      : none;
+    cursor               : pointer;
+    user-select          : none;
+}
+
+.taskList::-webkit-scrollbar {
+    width                : 0;
+    height               : 0;
+    background-color     : transparent;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .editCard{
+    position             : absolute;
+    background-color     : white;
+    width                : 90%;
+    left                 : 105%;
+    top                  : 225px;
+    height               : 200px;
+
+    overflow             : visible;
+    border-radius        : 10px;
+    scrollbar-width      : none;
+    
+    transform            : scale(0);
+
+  }
+.cardUp{
+  animation            : cardUp 200ms ease-out 0ms 1 forwards ;
+  }
+.cardDown{
+  animation            : cardDown 1000ms ease-in 0ms 1 forwards ;
+}
+  @keyframes cardDown {
+    0%{
+      transform            : scale(1);
+    }
+    75%{
+      transform            : scale(1);
+    }
+    100%{
+      transform            : scale(0);
+    }
+  }
+  @keyframes cardUp {
+    0%{
+      transform            : scale(0);
+    }
+    100%{
+      transform            : scale(1);
+    }
+  }
+
+  .editCard::-webkit-scrollbar {
+    width                : 0;
+    height               : 0;
+    background-color     : transparent;
+  }
+
+  .editForm{
+    top                  : 20px;
+    display              : flex;
+    flex-direction       : column;;
+    align-items          : flex-end;
+  }
+
+  .doneButton{
+    background-color     : rgb(111, 93, 135);
+    outline              : 6px solid white;
+    color                : white;
+    padding              : 10px;
+    border-radius        : 10px;
+    width                : 100px;
+    margin-right         : 25px;
+    /* transform         : scale(1); */
+  }
+  .doneButton:hover{
+    background-color     : rgb(150, 53, 163);
+    transform            : scale(0.95);
+    transition-duration  : 0ms;
+  }
+  .doneButton:active{
+    background-color     : rgb(111, 93, 135);
+    transition-duration  : 0ms;
+  }
+
+  .textarea {
+    height               : 150px;
+    width                : 350px;
+    resize               : none;
+    font-size            : 1.4rem;
+    font-family          : Verdana, Geneva, Tahoma, sans-serif;
+    font-weight          : bold;
+    color                : rgb(99, 80, 124);
+    border               : none;
+    outline              : none;
+    border               : 3px solid rgb(99, 80, 124);;
+
+    align-self           : center;
+
+    padding              : 15px;
+    border-radius        : 10px;
+    margin-bottom        : 10px;
+  }
+
+  .tick{
+    text-align           : center;
+    font-size            : 5rem;
+    background-color     : rgb(99, 80, 124);
+    color                : white;
+  }
